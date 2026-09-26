@@ -7,6 +7,8 @@
           content="width=device-width, initial-scale=1.0,
           maximum-scale=1.0, user-scalable=no">
 
+    <meta name="theme-color" content="#050505">
+
     <title>Beyza'ya ❤️</title>
 
     <link rel="stylesheet" href="style.css">
@@ -14,8 +16,18 @@
 
 <body>
 
-    <!-- Uçan kalpler -->
     <div class="hearts"></div>
+    <div class="sparkles"></div>
+
+    <!-- MİNİ MÜZİK BUTONU -->
+    <a
+        href="https://www.youtube.com/watch?v=38n54IJa300"
+        target="_blank"
+        class="floating-music"
+        aria-label="Gözleri Bal şarkısını aç">
+        ♪
+    </a>
+
 
     <!-- SAYFA 1 -->
     <section class="page page-one">
@@ -23,6 +35,8 @@
         <div class="stars"></div>
 
         <div class="content">
+
+            <div class="opening-heart">♡</div>
 
             <div class="small-title">
                 23 Eylül'den beri...
@@ -62,6 +76,11 @@
                 <span>→</span>
             </button>
 
+            <div class="scroll-hint">
+                aşağı kaydır
+                <span>↓</span>
+            </div>
+
         </div>
 
     </section>
@@ -88,7 +107,7 @@
 
             <div class="cards">
 
-                <div class="card">
+                <div class="card reveal">
                     <div class="card-icon">👀</div>
 
                     <h3>Gözlerin</h3>
@@ -101,7 +120,7 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card reveal">
                     <div class="card-icon">😊</div>
 
                     <h3>Gülüşün</h3>
@@ -114,7 +133,7 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card reveal">
                     <div class="card-icon">🖤</div>
 
                     <h3>Sen</h3>
@@ -130,14 +149,34 @@
             </div>
 
 
-            <div class="fun-box">
+            <!-- 23 EYLÜL -->
+            <div class="date-box reveal">
+
+                <div class="date-number">
+                    23
+                </div>
+
+                <div class="date-info">
+                    <span>EYLÜL</span>
+                    <p>
+                        Hikâyemizin küçük ama güzel
+                        başlangıçlarından biri.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- BEYZA BİLİM -->
+            <div class="fun-box reveal">
 
                 <h3>
                     🔬 Beyza Bilim Enstitüsü
                 </h3>
 
                 <p>
-                    Yapılan araştırmalar sonucunda:
+                    Yapılan son derece ciddi olmayan
+                    araştırmalar sonucunda:
                 </p>
 
                 <div class="research">
@@ -163,7 +202,10 @@
             </div>
 
 
-            <div class="special-quote">
+            <!-- ÖZEL SÖZ -->
+            <div class="special-quote reveal">
+
+                <div class="quote-glow">♡</div>
 
                 <p>
                     “Karanlığı sevdiğimi sanıyordum...
@@ -177,9 +219,115 @@
             </div>
 
 
-            <div class="music-box">
+            <!-- YENİ MESAJLAR -->
+            <div class="little-things reveal">
 
-                <span class="music-note">♪</span>
+                <div class="small-title">
+                    küçük itiraflar
+                </div>
+
+                <h2>
+                    Belki bilmiyorsun...
+                </h2>
+
+                <div class="message-card">
+                    <span>01</span>
+                    <p>
+                        Bazen durup dururken aklıma geliyorsun.
+                        Sebebini aramıyorum artık.
+                    </p>
+                </div>
+
+                <div class="message-card">
+                    <span>02</span>
+                    <p>
+                        Seninle konuşmanın güzel tarafı,
+                        konuşma bittikten sonra bile
+                        yüzümde bir gülümseme bırakması.
+                    </p>
+                </div>
+
+                <div class="message-card">
+                    <span>03</span>
+                    <p>
+                        Bu sitenin en güzel kısmını biliyor musun?
+                        İçindeki her şeyin sana ait olması.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- MEKTUP -->
+            <div class="letter-box reveal">
+
+                <div class="envelope">
+                    💌
+                </div>
+
+                <h3>
+                    Sana bir mektubum var
+                </h3>
+
+                <p>
+                    Her şeyi burada anlatamadım.
+                    Ama belki birkaç cümle daha söyleyebilirim.
+                </p>
+
+                <button
+                    class="letter-button"
+                    onclick="openLetter()">
+                    Mektubu aç
+                    <span>♡</span>
+                </button>
+
+                <div class="letter-content" id="letterContent">
+
+                    <div class="letter-line"></div>
+
+                    <p>
+                        Beyza,
+                    </p>
+
+                    <p>
+                        Bazen bir insana ne kadar değer verdiğini
+                        anlatacak doğru kelimeleri bulmak zor.
+                    </p>
+
+                    <p>
+                        Ben de bütün kelimeleri bir siteye
+                        sığdırmaya çalıştım.
+                    </p>
+
+                    <p>
+                        Belki kusursuz değil,
+                        belki her şeyi anlatmaya yetmiyor.
+                        Ama bunu hazırlarken gerçekten
+                        seni düşündüm.
+                    </p>
+
+                    <p class="letter-strong">
+                        İyi ki hayatıma güzel bir his olarak
+                        girdin.
+                    </p>
+
+                    <div class="letter-sign">
+                        Canım ❤️
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MÜZİK -->
+            <div class="music-box reveal">
+
+                <div class="vinyl">
+                    ♪
+                </div>
+
+                <span class="music-note">♫</span>
 
                 <h3>
                     Bu şarkı sana...
@@ -191,18 +339,78 @@
                 </p>
 
                 <a
-                    href="https://www.youtube.com/results?search_query=ASH+G%C3%B6zleri+Bal"
+                    href="https://www.youtube.com/watch?v=38n54IJa300"
                     target="_blank"
                     class="music-button">
 
-                    🎵 Gözleri Bal'ı Dinle
+                    🎵 Gözleri Bal'ı Aç
 
                 </a>
+
+                <div class="music-caption">
+                    ash — Gözleri Bal
+                </div>
 
             </div>
 
 
-            <div class="final-box">
+            <!-- SÜRPRİZ -->
+            <div class="surprise-box reveal">
+
+                <div class="gift">🎁</div>
+
+                <h3>
+                    Bir tane daha var...
+                </h3>
+
+                <p>
+                    Buraya kadar geldiysen küçük
+                    bir sürprizi hak ettin.
+                </p>
+
+                <button
+                    onclick="openSurprise()"
+                    class="surprise-button">
+
+                    Sürprizi aç ❤️
+
+                </button>
+
+                <div
+                    class="surprise-content"
+                    id="surpriseContent">
+
+                    <div class="surprise-heart">
+                        ♥
+                    </div>
+
+                    <h3>
+                        Beyza...
+                    </h3>
+
+                    <p>
+                        Dünyada milyonlarca insan var.
+                        Ama bazı insanlar diğerlerinden
+                        farklı hissettiriyor.
+                    </p>
+
+                    <p class="strong">
+                        Sen benim için o insanlardan birisin.
+                    </p>
+
+                    <p>
+                        İyi ki 23 Eylül.
+                        <br>
+                        İyi ki tanışmışız.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FİNAL -->
+            <div class="final-box reveal">
 
                 <div class="big-heart">
                     ♥
@@ -226,6 +434,10 @@
                     Ben de senin için küçük bir dünya
                     yapmak istedim.
                 </p>
+
+                <div class="final-divider">
+                    ✦
+                </div>
 
                 <p>
                     İyi ki 23 Eylül.
