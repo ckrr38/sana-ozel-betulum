@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* SAYFALAR */
+
+.page {
+    min-height: 100vh;
+    min-height: 100svh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+.page-one {
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(255, 255, 255, 0.08),
+            transparent 30%
+        ),
+        #050505;
+}
+
+
+.page-two {
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(130, 130, 130, 0.08),
+            transparent 35%
+        ),
+        #080808;
+}
+
+
+/* İÇERİK */
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #aaa;
+
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: clamp(55px, 17vw, 90px);
+    font-weight: 700;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 15px;
+}
+
+
+h1 span {
+    color: white;
+    animation: heartbeat 2s infinite;
+}
+
+
+.line {
+    width: 60px;
+    height: 1px;
+
+    background: white;
+
+    margin: 20px auto 30px;
+
+    opacity: .6;
+}
+
+
+.intro {
+    color: #d1d1d1;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+.quote {
+    margin: 35px 0;
+
+    padding: 25px;
+
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+
+    color: #aaa;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    font-style: italic;
+}
+
+
+button {
+    border: 1px solid #555;
+
+    background: rgba(255,255,255,.04);
+
+    color: white;
+
+    padding: 16px 25px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+
+button span {
+    margin-left: 8px;
+}
+
+
+/* 2. SAYFA */
+
+h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-text {
+    color: #999;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.card {
+    background: rgba(255,255,255,.035);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+
+.card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(255,255,255,.4);
+}
+
+
+.card-icon {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+
+    font-size: 19px;
+}
+
+
+.card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* EĞLENCELİ KISIM */
+
+.fun-box {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: #101010;
+
+    border: 1px solid #202020;
+
+    text-align: left;
+}
+
+
+.fun-box h3 {
+    margin-bottom: 10px;
+}
+
+
+.fun-box > p {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+
+.research {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #222;
+
+    font-size: 13px;
+}
+
+
+.research span {
+    color: #aaa;
+}
+
+
+.research b {
+    color: white;
+}
+
+
+/* ÖZEL SÖZ */
+
+.special-quote {
+    margin: 35px 0;
+
+    padding: 35px 20px;
+
+    background: linear-gradient(
+        145deg,
+        #101010,
+        #050505
+    );
+
+    border-radius: 25px;
+
+    border: 1px solid #222;
+}
+
+
+.special-quote p {
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+}
+
+
+.special-quote small {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #777;
+}
+
+
+/* MÜZİK */
+
+.music-box {
+    padding: 30px 20px;
+
+    border-radius: 25px;
+
+    background: #111;
+
+    border: 1px solid #222;
+}
+
+
+.music-note {
+    font-size: 35px;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    animation: music 1s infinite alternate;
+}
+
+
+.music-box h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.music-box p {
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+.music-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: black;
+
+    background: white;
+
+    padding: 13px 20px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* FİNAL */
+
+.final-box {
+    margin-top: 30px;
+
+    padding: 40px 25px;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #181818,
+            #070707
+        );
+
+    border: 1px solid #292929;
+}
+
+
+.big-heart {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+    animation: heartbeat 1.8s infinite;
+}
+
+
+.final-box h2 {
+    margin-bottom: 20px;
+}
+
+
+.final-box p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.final-box .strong {
+    color: white;
+
+    font-size: 17px;
+}
+
+
+.signature {
+    margin-top: 30px;
+
+    font-size: 25px;
+
+    font-style: italic;
+}
+
+
+.joke {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #222;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* KALPLER */
+
+.hearts {
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 10;
+
+    overflow: hidden;
+}
+
+
+.heart {
+    position: absolute;
+
+    bottom: -30px;
+
+    color: rgba(255,255,255,.45);
+
+    animation: fly linear forwards;
+
+    font-size: 15px;
+}
+
+
+@keyframes fly {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .8;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            translateX(var(--move))
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+
+@keyframes music {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* TELEFON */
+
+@media (max-width: 480px) {
+
+    .page {
+        padding: 45px 18px;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    .quote {
+        font-size: 14px;
+    }
+
+    .special-quote p {
+        font-size: 18px;
+    }
+}
